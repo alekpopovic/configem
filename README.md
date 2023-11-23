@@ -8,21 +8,49 @@ TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG` with 
 
 Install the gem and add to the application's Gemfile by executing:
 
-    $ bundle add UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
+    $ bundle add configem
 
 If bundler is not being used to manage dependencies, install the gem by executing:
 
-    $ gem install UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
+    $ gem install configem
 
 ## Usage
 
-TODO: Write usage instructions here
+```sh
+class Example1
+  include Configem
+end
+
+class Example2
+  extend Configem
+end
+
+class Example3
+  prepend Configem
+end
+
+Example1.configure do |config|
+  config.api_key_1 = "api_key_1_value"
+end
+
+Example2.configure do |config|
+  config.api_key_2 = "api_key_2_value"
+end
+
+Example3.configure do |config|
+  config.api_key_3 = "api_key_3_value"
+end
+
+puts Example1.config.api_key_1
+
+puts Example2.config.api_key_2
+
+puts Example3.config.api_key_3
+```
 
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
