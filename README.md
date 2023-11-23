@@ -2,6 +2,8 @@
 
 [![Ruby](https://github.com/alekpopovic/configem/actions/workflows/ruby.yml/badge.svg)](https://github.com/alekpopovic/configem/actions/workflows/ruby.yml)
 
+[![Ruby Gem](https://github.com/alekpopovic/configem/actions/workflows/gem-push.yml/badge.svg)](https://github.com/alekpopovic/configem/actions/workflows/gem-push.yml)
+
 A simple mixin to add configuration functionality to your classes
 
 ## Installation
