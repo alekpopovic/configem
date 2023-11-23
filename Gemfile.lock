@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    configem (1.0.1)
+    configem (1.0.7)
 
 GEM
   remote: https://rubygems.org/
