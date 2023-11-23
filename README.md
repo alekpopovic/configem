@@ -1,5 +1,7 @@
 # Configem
 
+[![Ruby](https://github.com/alekpopovic/configem/actions/workflows/ruby.yml/badge.svg)](https://github.com/alekpopovic/configem/actions/workflows/ruby.yml)
+
 A simple mixin to add configuration functionality to your classes
 
 ## Installation

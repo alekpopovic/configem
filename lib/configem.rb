@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Configem
-  VERSION = "1.0.1"
+  VERSION = "1.0.3"
 
   class << self
     def included(base)
