@@ -47,9 +47,15 @@ end
 
 puts Example1.config.api_key_1
 
+"api_key_1_value"
+
 puts Example2.config.api_key_2
 
+"api_key_2_value"
+
 puts Example3.config.api_key_3
+
+"api_key_3_value"
 ```
 
 ## Development
